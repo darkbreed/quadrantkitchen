@@ -1,0 +1,428 @@
+/* General grid styles */
+@import url(http://fonts.googleapis.com/css?family=Glegoo|Condiment|Pathway+Gothic+One|Nothing+You+Could+Do);
+/* line 2, ../scss/component.scss */
+.cbp-ig-grid {
+  list-style: none;
+  padding: 0 0 50px 0;
+  margin: 0;
+}
+
+/* Clear floats */
+/* line 10, ../scss/component.scss */
+.cbp-ig-grid:before,
+.cbp-ig-grid:after {
+  content: " ";
+  display: table;
+}
+
+/* line 15, ../scss/component.scss */
+.cbp-ig-grid:after {
+  clear: both;
+}
+
+/* grid item */
+/* line 20, ../scss/component.scss */
+.cbp-ig-grid li {
+  width: 33%;
+  float: left;
+  height: 160px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* we are using a combination of borders and box shadows to control the grid lines */
+/* line 29, ../scss/component.scss */
+.cbp-ig-grid li:nth-child(-n+3) {
+  border-top: none;
+}
+
+/* line 34, ../scss/component.scss */
+.cbp-ig-grid li:nth-child(3n-1),
+.cbp-ig-grid li:nth-child(3n-2) {
+  box-shadow: 1px 0 0 #ddd;
+}
+
+/* anchor style */
+/* line 39, ../scss/component.scss */
+.cbp-ig-grid li > a {
+  display: block;
+  height: 100%;
+  color: #fff;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+/* the icon with pseudo class for icon font */
+/* line 49, ../scss/component.scss */
+.cbp-ig-icon {
+  padding: 30px 0 0 0;
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+/* line 57, ../scss/component.scss */
+.cbp-ig-icon:before {
+  font-family: 'anyoldicon';
+  font-size: 14em;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* title element */
+/* line 70, ../scss/component.scss */
+.cbp-ig-grid .cbp-ig-title {
+  margin: 20px 0 10px 0;
+  padding: 20px 0 0 0;
+  font-size: 2em;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+/* line 80, ../scss/component.scss */
+.cbp-ig-grid .cbp-ig-title:before {
+  content: '';
+  position: absolute;
+  background: #47a3da;
+  width: 160px;
+  height: 6px;
+  top: 0px;
+  left: 50%;
+  margin: -10px 0 0 -80px;
+  -webkit-transition: margin-top 0.2s;
+  /* top or translate does not seem to work in Firefox */
+  -moz-transition: margin-top 0.2s;
+  transition: margin-top 0.2s;
+}
+
+/* line 94, ../scss/component.scss */
+.cbp-ig-grid .cbp-ig-category {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transform: translateY(10px);
+  -moz-transform: -moz-translateY(10px);
+  -ms-transform: -ms-translateY(10px);
+  transform: translateY(10px);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  -webkit-transition: transform 0.3s, opacity 0.2s;
+}
+
+/* line 111, ../scss/component.scss */
+.cbp-ig-grid li:hover .cbp-ig-category,
+.touch .cbp-ig-grid li .cbp-ig-category {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* Hover styles */
+/* line 121, ../scss/component.scss */
+.cbp-ig-grid li > a:hover {
+  background: #47a3da;
+}
+
+/* line 125, ../scss/component.scss */
+.cbp-ig-grid li > a:hover .cbp-ig-icon {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+/* line 133, ../scss/component.scss */
+.cbp-ig-grid li > a:hover .cbp-ig-icon:before,
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  color: #fff;
+}
+
+/* line 137, ../scss/component.scss */
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+
+/* line 144, ../scss/component.scss */
+.cbp-ig-grid li > a:hover .cbp-ig-title:before {
+  background: #fff;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 62.75em) {
+  /* line 151, ../scss/component.scss */
+  .cbp-ig-grid li {
+    width: 50%;
+  }
+
+  /* reset the grid lines */
+  /* line 156, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(-n+3) {
+    border-top: 1px solid #ddd;
+  }
+
+  /* line 161, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(3n-1),
+  .cbp-ig-grid li:nth-child(3n-2) {
+    box-shadow: none;
+  }
+
+  /* line 165, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(-n+2) {
+    border-top: none;
+  }
+}
+@media screen and (max-width: 41.6em) {
+  /* line 175, ../scss/component.scss */
+  .cbp-ig-grid li {
+    width: 100%;
+  }
+
+  /* line 179, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(-n+2) {
+    border-top: 1px solid #ddd;
+  }
+
+  /* line 183, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(2n-1) {
+    box-shadow: none;
+  }
+
+  /* line 187, ../scss/component.scss */
+  .cbp-ig-grid li:first-child {
+    border-top: none;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 193, ../scss/component.scss */
+  .cbp-ig-grid {
+    font-size: 80%;
+  }
+
+  /* line 197, ../scss/component.scss */
+  .cbp-ig-grid .cbp-ig-category {
+    margin-top: 20px;
+  }
+}
+/* line 19, ../scss/main.scss */
+.row {
+  max-width: 100% !important;
+}
+
+/* line 23, ../scss/main.scss */
+span.tags-label {
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+/* line 27, ../scss/main.scss */
+body {
+  font-family: 'Glegoo', serif;
+  color: white;
+  height: 100%;
+}
+/* line 32, ../scss/main.scss */
+body p {
+  font-size: 14px;
+}
+/* line 36, ../scss/main.scss */
+body a {
+  color: white;
+}
+
+/* line 41, ../scss/main.scss */
+img.desaturate {
+  -webkit-filter: brightness(60%);
+  -moz-filter: brightness(60%);
+  filter: brightness(60%);
+}
+
+/* line 47, ../scss/main.scss */
+img:hover {
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  filter: brightness(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+}
+
+/* line 55, ../scss/main.scss */
+img.circular {
+  height: 75px;
+  width: 75px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+/* line 64, ../scss/main.scss */
+#main-menu a.item label {
+  color: #fff;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 20px;
+}
+
+/* line 72, ../scss/main.scss */
+.sidebar.columns,
+#content #grid .columns {
+  padding-left: 0;
+  padding-right: 10px;
+  height: 100%;
+}
+
+/* line 86, ../scss/main.scss */
+#content {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 90, ../scss/main.scss */
+#sidebar {
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 94, ../scss/main.scss */
+#sidebar .columns {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 99, ../scss/main.scss */
+#sidebar hr {
+  border-color: #4d4d4d;
+}
+/* line 103, ../scss/main.scss */
+#sidebar #main-menu {
+  margin-bottom: 10px;
+}
+/* line 105, ../scss/main.scss */
+#sidebar #main-menu .item {
+  text-align: center;
+}
+/* line 109, ../scss/main.scss */
+#sidebar #main-menu i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+}
+/* line 117, ../scss/main.scss */
+#sidebar #social a {
+  font-size: 40px;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 128, ../scss/main.scss */
+#hero {
+  min-height: 100%;
+  background: url("../img/bw_background.jpg") no-repeat center center fixed;
+  background-color: #000;
+  background-size: cover;
+}
+/* line 133, ../scss/main.scss */
+#hero img#logo {
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 139, ../scss/main.scss */
+#grid {
+  margin-top: 50px;
+}
+
+/* line 143, ../scss/main.scss */
+.grid-item {
+  min-height: 300px;
+  margin-bottom: 10px;
+  min-width: 100%;
+}
+/* line 151, ../scss/main.scss */
+.grid-item img {
+  min-width: 100%;
+  min-height: 250px;
+  margin-top: 10px;
+}
+/* line 157, ../scss/main.scss */
+.grid-item h3 {
+  margin-bottom: 0px;
+}
+/* line 161, ../scss/main.scss */
+.grid-item p {
+  padding: 0 0 20px;
+}
+/* line 165, ../scss/main.scss */
+.grid-item .date {
+  padding: 10px 0 0 0px;
+}
+/* line 169, ../scss/main.scss */
+.grid-item .tags {
+  padding: 10px 0 10px 0;
+}
+/* line 173, ../scss/main.scss */
+.grid-item hr {
+  margin: 0;
+  padding: 0;
+  border-color: #3d3d3d;
+}
+
+/* line 180, ../scss/main.scss */
+article {
+  margin-top: 20px;
+}
+/* line 184, ../scss/main.scss */
+article h3 {
+  font-family: 'Nothing You Could Do', cursive;
+}
+/* line 188, ../scss/main.scss */
+article span.tags-label {
+  font-family: 'Nothing You Could Do', cursive;
+}
+/* line 192, ../scss/main.scss */
+article .article-feature {
+  width: 100%;
+}
+
+/* line 197, ../scss/main.scss */
+h3.article-body {
+  font-family: 'Nothing You Could Do', cursive;
+  color: white;
+}
+
+/* line 202, ../scss/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: white;
+}
+
+/* line 207, ../scss/main.scss */
+footer {
+  color: #404040;
+  border-top: 1px solid #404040;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+}
+/* line 208, ../scss/main.scss */
+footer a {
+  color: #404040;
+}

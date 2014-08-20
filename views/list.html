@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+      <!-- Top Navigation -->
+      
+      <div class="row">
+
+        {% if posts %}
+          {% for post in posts %}
+          <div class="large-12 columns">
+            <div class="grid-item clearfix">
+              <div class="large-5 columns">
+                <a href="/{{post.meta.url}}"><img class="desaturate" src="{{post.meta.featureImage}}"></a>
+              </div>
+              <div class="large-7 columns">
+                <h3><a href="/{{post.meta.url}}">{{post.meta.title}}</a></h3>
+                <hr/>
+                <div class="date">Published {{post.meta.date}}</div>
+                <div class="tags"><span class="tags-label">Tags: </span>{{post.meta.tags}}</div>
+                <p class="intro">{{post.meta.intro}}</p>
+              </div>
+            </div> 
+          </div> 
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            {% if pager %}
+              {% if pager.has_previous_page %}
+              <a class="button small left radius" href="{{contentType}}?page={{pager.previous_page}}">Previous</a>
+              {% endif %}
+
+              {% if pager.has_next_page %}
+              <a class="button small right radius" href="{{contentType}}?page={{pager.next_page}}">Next</a>
+              {% endif %}
+
+            {% endif %}
+          </div>
+        {% else %}
+          <h2>Oops... sorry no results we found</h2>
+        {% endif %}
+              
+      </div> <!-- Row -->
+{% endblock %}

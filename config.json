@@ -1,0 +1,28 @@
+{
+  "locals": {
+    "url": "http://localhost:3000",
+    "name": "The Quadrant Kitchen",
+    "owner": "Ben Reed",
+    "description": "Ramblings and recipes from a Bristolian cook."
+  },
+  "app": {
+    "port": 3000
+  },
+  "settings":{
+    "articlesPerPage": 10,
+    "pagerLinks": 10
+  },
+  "templates": {
+    "listview": "list.html",
+    "directory": "directory.html",
+    "rss": "feed.html",
+    "home": "index.html"
+  },
+  "page": {
+    "social": {
+      "disqus-shortname": "quadrantkitchen",
+      "facebook-page" : "quadrantkitchen",
+      "twitterName" : "quadrantkitchen"
+    }
+  }
+}

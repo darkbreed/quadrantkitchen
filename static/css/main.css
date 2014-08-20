@@ -1,0 +1,207 @@
+@import url(http://fonts.googleapis.com/css?family=Glegoo|Condiment|Pathway+Gothic+One|Nothing+You+Could+Do);
+/* line 19, ../scss/main.scss */
+.row {
+  max-width: 100% !important;
+}
+
+/* line 23, ../scss/main.scss */
+span.tags-label {
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+/* line 27, ../scss/main.scss */
+body {
+  font-family: 'Glegoo', serif;
+  color: white;
+  height: 100%;
+}
+/* line 32, ../scss/main.scss */
+body p {
+  font-size: 14px;
+}
+/* line 36, ../scss/main.scss */
+body a {
+  color: white;
+}
+
+/* line 41, ../scss/main.scss */
+img.desaturate {
+  -webkit-filter: brightness(60%);
+  -moz-filter: brightness(60%);
+  filter: brightness(60%);
+}
+
+/* line 47, ../scss/main.scss */
+img:hover {
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  filter: brightness(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+}
+
+/* line 55, ../scss/main.scss */
+img.circular {
+  height: 75px;
+  width: 75px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+/* line 64, ../scss/main.scss */
+#main-menu a.item label {
+  color: #fff;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 20px;
+}
+
+/* line 72, ../scss/main.scss */
+.sidebar.columns,
+#content #grid .columns {
+  padding-left: 0;
+  padding-right: 10px;
+  height: 100%;
+}
+
+/* line 86, ../scss/main.scss */
+#content {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 90, ../scss/main.scss */
+#sidebar {
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 94, ../scss/main.scss */
+#sidebar .columns {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 99, ../scss/main.scss */
+#sidebar hr {
+  border-color: #4d4d4d;
+}
+/* line 103, ../scss/main.scss */
+#sidebar #main-menu {
+  margin-bottom: 10px;
+}
+/* line 105, ../scss/main.scss */
+#sidebar #main-menu .item {
+  text-align: center;
+}
+/* line 109, ../scss/main.scss */
+#sidebar #main-menu i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+}
+/* line 117, ../scss/main.scss */
+#sidebar #social a {
+  font-size: 40px;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 128, ../scss/main.scss */
+#hero {
+  min-height: 100%;
+  background: url("../img/bw_background.jpg") no-repeat center center fixed;
+  background-color: #000;
+  background-size: cover;
+}
+/* line 133, ../scss/main.scss */
+#hero img#logo {
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 139, ../scss/main.scss */
+#grid {
+  margin-top: 50px;
+}
+
+/* line 143, ../scss/main.scss */
+.grid-item {
+  min-height: 300px;
+  margin-bottom: 10px;
+  min-width: 100%;
+}
+/* line 151, ../scss/main.scss */
+.grid-item img {
+  min-width: 100%;
+  min-height: 250px;
+  margin-top: 10px;
+}
+/* line 157, ../scss/main.scss */
+.grid-item h3 {
+  margin-bottom: 0px;
+}
+/* line 161, ../scss/main.scss */
+.grid-item p {
+  padding: 0 0 20px;
+}
+/* line 165, ../scss/main.scss */
+.grid-item .date {
+  padding: 10px 0 0 0px;
+}
+/* line 169, ../scss/main.scss */
+.grid-item .tags {
+  padding: 10px 0 10px 0;
+}
+/* line 173, ../scss/main.scss */
+.grid-item hr {
+  margin: 0;
+  padding: 0;
+  border-color: #3d3d3d;
+}
+
+/* line 180, ../scss/main.scss */
+article {
+  margin-top: 20px;
+}
+/* line 184, ../scss/main.scss */
+article h3 {
+  font-family: 'Nothing You Could Do', cursive;
+}
+/* line 188, ../scss/main.scss */
+article span.tags-label {
+  font-family: 'Nothing You Could Do', cursive;
+}
+/* line 192, ../scss/main.scss */
+article .article-feature {
+  width: 100%;
+}
+
+/* line 197, ../scss/main.scss */
+h3.article-body {
+  font-family: 'Nothing You Could Do', cursive;
+  color: white;
+}
+
+/* line 202, ../scss/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: white;
+}
+
+/* line 207, ../scss/main.scss */
+footer {
+  color: #404040;
+  border-top: 1px solid #404040;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+}
+/* line 208, ../scss/main.scss */
+footer a {
+  color: #404040;
+}

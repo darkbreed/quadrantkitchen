@@ -1,0 +1,217 @@
+@import url(http://fonts.googleapis.com/css?family=Glegoo|Condiment|Pathway+Gothic+One|Nothing+You+Could+Do);
+
+$bodyTextColour: #fff;
+$tint: rgba(0,0,0,0.6);
+$grey: #4d4d4d;
+
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin fadeIn {
+    opacity: 1;
+    -webkit-transition: .5s ease-in 0.5s;
+    -moz-transition: .5s ease-in 0.5s;
+}
+
+.row {
+    max-width: 100% !important;
+}
+
+span.tags-label {
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+body {
+    font-family: 'Glegoo', serif;
+    color: $bodyTextColour;
+    height: 100%;
+    
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        color: $bodyTextColour;
+    }
+}
+
+img.desaturate { 
+    -webkit-filter: brightness(60%);
+    -moz-filter: brightness(60%);
+    filter: brightness(60%);
+}
+
+img:hover { 
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
+    filter: brightness(100%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+}
+
+img.circular {
+    height: 75px;
+    width: 75px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+#main-menu {
+    a.item label {
+        color: #fff;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 20px;
+    }
+}
+
+.sidebar.columns,
+#content #grid .columns {
+    padding-left: 0;
+    padding-right: 10px;
+    height: 100%;
+}
+
+#sidebar.page-loaded {
+
+}
+
+#content.page-loaded {
+    
+}
+
+#content {
+    background-color: $tint;
+}
+
+#sidebar {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    .columns {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    hr {
+        border-color: $grey;
+    }
+
+    #main-menu {
+        margin-bottom: 10px;
+        .item {
+            text-align: center;
+        }
+
+        i {
+            @include center;
+            font-size: 28px;
+        }
+    }
+
+    #social {
+        
+        a {
+            font-size: 40px;
+            display: block;
+            margin: 10px auto;
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+}
+
+#hero {
+    min-height: 100%;
+    background: url('../img/bw_background.jpg') no-repeat center center fixed;
+    background-color: #000;
+    background-size: cover;
+    img#logo {
+        margin-bottom: 20px;
+        @include center;
+    }
+}
+
+#grid {
+    margin-top: 50px;
+}
+
+.grid-item {
+
+    $item-padding: 20px;
+    
+    min-height: 300px;
+    margin-bottom: 10px;
+    min-width: 100%;
+
+    img {
+        min-width: 100%;
+        min-height: 250px;
+        margin-top: 10px;
+    }
+
+    h3 {
+        margin-bottom: 0px;
+    }
+
+    p {
+        padding: 0 0 $item-padding;
+    }
+
+    .date {
+        padding: 10px 0 0 0px;
+    }
+
+    .tags {
+        padding: 10px 0 10px 0;
+    }
+
+    hr {
+        margin: 0;
+        padding: 0;
+        border-color: #3d3d3d;
+    }
+}
+
+article {
+
+    margin-top: 20px;
+
+    h3 {
+        font-family: 'Nothing You Could Do', cursive;
+    }
+
+    span.tags-label {
+        font-family: 'Nothing You Could Do', cursive;
+    }
+
+    .article-feature {
+        width: 100%;
+    }
+}
+
+h3.article-body {
+    font-family: 'Nothing You Could Do', cursive;
+    color: $bodyTextColour;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: $bodyTextColour;
+}
+
+footer {
+    a {
+        color: #404040;
+    }
+    color: #404040;
+    border-top: 1px solid #404040;
+	background-color: #000;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+} 

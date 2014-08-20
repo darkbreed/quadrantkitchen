@@ -1,0 +1,221 @@
+/* General grid styles */
+/* line 2, ../scss/component.scss */
+.cbp-ig-grid {
+  list-style: none;
+  padding: 0 0 50px 0;
+  margin: 0;
+}
+
+/* Clear floats */
+/* line 10, ../scss/component.scss */
+.cbp-ig-grid:before,
+.cbp-ig-grid:after {
+  content: " ";
+  display: table;
+}
+
+/* line 15, ../scss/component.scss */
+.cbp-ig-grid:after {
+  clear: both;
+}
+
+/* grid item */
+/* line 20, ../scss/component.scss */
+.cbp-ig-grid li {
+  width: 33%;
+  float: left;
+  height: 160px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* we are using a combination of borders and box shadows to control the grid lines */
+/* line 29, ../scss/component.scss */
+.cbp-ig-grid li:nth-child(-n+3) {
+  border-top: none;
+}
+
+/* line 34, ../scss/component.scss */
+.cbp-ig-grid li:nth-child(3n-1),
+.cbp-ig-grid li:nth-child(3n-2) {
+  box-shadow: 1px 0 0 #ddd;
+}
+
+/* anchor style */
+/* line 39, ../scss/component.scss */
+.cbp-ig-grid li > a {
+  display: block;
+  height: 100%;
+  color: #fff;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+/* the icon with pseudo class for icon font */
+/* line 49, ../scss/component.scss */
+.cbp-ig-icon {
+  padding: 30px 0 0 0;
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+/* line 57, ../scss/component.scss */
+.cbp-ig-icon:before {
+  font-family: 'anyoldicon';
+  font-size: 14em;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* title element */
+/* line 70, ../scss/component.scss */
+.cbp-ig-grid .cbp-ig-title {
+  margin: 20px 0 10px 0;
+  padding: 20px 0 0 0;
+  font-size: 2em;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+/* line 80, ../scss/component.scss */
+.cbp-ig-grid .cbp-ig-title:before {
+  content: '';
+  position: absolute;
+  background: #47a3da;
+  width: 160px;
+  height: 6px;
+  top: 0px;
+  left: 50%;
+  margin: -10px 0 0 -80px;
+  -webkit-transition: margin-top 0.2s;
+  /* top or translate does not seem to work in Firefox */
+  -moz-transition: margin-top 0.2s;
+  transition: margin-top 0.2s;
+}
+
+/* line 94, ../scss/component.scss */
+.cbp-ig-grid .cbp-ig-category {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transform: translateY(10px);
+  -moz-transform: -moz-translateY(10px);
+  -ms-transform: -ms-translateY(10px);
+  transform: translateY(10px);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  -webkit-transition: transform 0.3s, opacity 0.2s;
+}
+
+/* line 111, ../scss/component.scss */
+.cbp-ig-grid li:hover .cbp-ig-category,
+.touch .cbp-ig-grid li .cbp-ig-category {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* Hover styles */
+/* line 121, ../scss/component.scss */
+.cbp-ig-grid li > a:hover {
+  background: #47a3da;
+}
+
+/* line 125, ../scss/component.scss */
+.cbp-ig-grid li > a:hover .cbp-ig-icon {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+/* line 133, ../scss/component.scss */
+.cbp-ig-grid li > a:hover .cbp-ig-icon:before,
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  color: #fff;
+}
+
+/* line 137, ../scss/component.scss */
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+
+/* line 144, ../scss/component.scss */
+.cbp-ig-grid li > a:hover .cbp-ig-title:before {
+  background: #fff;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 62.75em) {
+  /* line 151, ../scss/component.scss */
+  .cbp-ig-grid li {
+    width: 50%;
+  }
+
+  /* reset the grid lines */
+  /* line 156, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(-n+3) {
+    border-top: 1px solid #ddd;
+  }
+
+  /* line 161, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(3n-1),
+  .cbp-ig-grid li:nth-child(3n-2) {
+    box-shadow: none;
+  }
+
+  /* line 165, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(-n+2) {
+    border-top: none;
+  }
+}
+@media screen and (max-width: 41.6em) {
+  /* line 175, ../scss/component.scss */
+  .cbp-ig-grid li {
+    width: 100%;
+  }
+
+  /* line 179, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(-n+2) {
+    border-top: 1px solid #ddd;
+  }
+
+  /* line 183, ../scss/component.scss */
+  .cbp-ig-grid li:nth-child(2n-1) {
+    box-shadow: none;
+  }
+
+  /* line 187, ../scss/component.scss */
+  .cbp-ig-grid li:first-child {
+    border-top: none;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 193, ../scss/component.scss */
+  .cbp-ig-grid {
+    font-size: 80%;
+  }
+
+  /* line 197, ../scss/component.scss */
+  .cbp-ig-grid .cbp-ig-category {
+    margin-top: 20px;
+  }
+}

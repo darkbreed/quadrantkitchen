@@ -1,0 +1,146 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Quadrant Kitchen | Recipe site and blog</title>
+	<meta name="description" content="Recipes and musings from a Bristolian cook."/>
+	<meta name="author" content="Ben Reed"/>
+	<meta name="copyright" content="Ben Reed Copyright (c) 2014"/>
+	
+	<link rel="stylesheet" href="/static/css/foundation.css"/>
+	<link rel="stylesheet" href="/static/css/foundation-icons.css" />
+  	<link rel="stylesheet" href="/static/css/app.css"/>
+
+	<script src="/static/js/vendor/modernizr.js"></script>
+	<script src="/static/js/vendor/jquery.js"></script>
+	<script src="/static/js/vendor/fastclick.js"></script>
+	<script src="/static/js/vendor/jquery.js"></script>
+ 	<script src="/static/js/vendor/classie.js"></script>
+  	<script src="/static/js/foundation.min.js"></script>
+  	<script src="/static/js/app.js"></script>
+</head>
+<body>
+	<div id="hero">
+		<div class="row">
+			<div class="large-3 columns sidebar">
+				<div id="sidebar">
+					<div id="social">
+						<div class="small-3 columns">
+							<a href="http://www.facebook.com/quadrantkitchen"><i class="fi-social-facebook"></i></a>
+						</div>
+						<div class="small-3 columns">
+							<a href="http://www.twitter.com/quadrantkitchen"><i class="fi-social-twitter"></i></a>
+						</div>
+						<div class="small-3 columns">
+							<a href="http://www.instagram.com/quadrantkitchen"><i class="fi-social-instagram"></i></a>
+						</div>
+						<div class="small-3 columns">
+						<a href="http://www.pinterest.com/bjreed83/recipes"><i class="fi-social-pinterest"></i></a>
+					</div>
+					</div>
+					<hr/>
+					<a href="/">
+						<img id="logo" src="/static/img/logo_w.png" width="300">
+					</a>
+					<hr/>
+					<div id="main-menu" class="clearfix"> 
+						<div class="small-4 columns">
+							<a class="item" href="/recipes?page=1">
+								<i class="fi-book"></i>
+								<label>Recipes</label>
+							</a>
+						</div>
+						<div class="small-4 columns">
+							<a class="item" href="/blog?page=1">
+								<i class="fi-bookmark"></i>
+							    <label>Blog</label>
+							</a>
+						</div>
+						<div class="small-4 columns">
+							<a class="item" href="/directory?page=1">
+							    <i class="fi-map"></i>
+							    <label>Directory</label>
+							</a>
+						</div>
+					</div>
+		      	</div>
+			</div>
+
+			<div class="large-9 columns" id="content">
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="row">
+			<div class="large-3 columns">
+				<h3>Get in touch</h3>
+				<p>Feedback is always welcome, please get in touch if you have sucggestions, ideas or even if you just want to say hi.</p>
+				<form>
+					<input type="text" placeholder="Name..." />
+					<input type="text" placeholder="email@example.com" />
+					<textarea placeholder="Your message (try to keep it nice!)"></textarea>
+					<button class="expand submit">Submit</button>
+				</form> 
+			</div>
+			
+			<div class="large-9 columns">
+				<div id="about">
+					<h3>Who is this guy?</h3>
+					<p>Well, my name is Ben Reed and this is my little corner of the internet for all things food and drink related. Day to day I am a mobile app developer and architect, but in the evenings and at weekends my wife and I enjoy all things food related, cooking, brewing, curing, smoking & preserving to name but a few. I also enjoy food photography, but I am very much an amateur when it comes to this!</p>
+
+					<p>Here you will find recipes that I've noted down along the way, blogs about homebrewing and charcuterie amongst many other things, and reviews of various places we have been on our travels.</p>
+				</div>
+				<hr />
+				<div class="row">
+					<div class="small-4 columns">
+						<div id="archives">
+							<h3>Archives</h3>
+							<ul>
+								<li><a href="/archives/2012">2012</a></li>
+								<li><a href="/archives/2013">2013</a></li>
+								<li><a href="/archives/2014">2014</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="small-4 columns">
+						<div id="categories">
+							<h3>Categories</h3>
+							<ul>
+								<li><a href="/tags/pork">Pork</a></li>
+								<li><a href="/tags/american">American</a></li>
+								<li><a href="/tags/bbq">BBQ</a></li>
+								<li><a href="/tags/breakfast">Breakfast</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="small-4 columns">
+						<div id="categories">
+							<h3>Be sociable</h3>
+							<ul>
+								<li><a href="http://www.facebook.com/quadrantkitchen"><i class="fi-social-facebook"></i></a> Facebook</li>
+								<li><a href="http://www.twitter.com/quadrantkitchen"><i class="fi-social-twitter"></i></a> Twitter</li>
+								<li><a href="http://www.instagram.com/quadrantkitchen"><i class="fi-social-instagram"></i></a> Instagram</li>
+								<li><a href="http://www.pinterest.com/bjreed83/recipes"><i class="fi-social-pinterest"></i></a> Pinterest</li>						
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="large-12">
+				<div class="large-12 columns large-centered">
+					<p>Quadrant Kitchen &copy; Ben Reed 2014</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
+	
