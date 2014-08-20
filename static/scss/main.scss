@@ -16,6 +16,10 @@ $grey: #4d4d4d;
     -moz-transition: .5s ease-in 0.5s;
 }
 
+html {
+    background-color: #000;
+}
+
 .row {
     max-width: 100% !important;
 }
@@ -214,4 +218,9 @@ footer {
     margin: 0;
     padding: 0;
     height: 500px;
+
+    #social-footer ul{
+        list-style: none;
+        margin: 0;
+    }
 } 
