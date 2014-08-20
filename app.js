@@ -324,9 +324,9 @@ var pageObject = function(){
 	return config.page;
 }
 
-app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
-app.set('ipaddr', process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1");
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
-var server = app.listen(config.app.port, function() {
+var server = app.listen(server_port, server_ip_address, function() {
     console.log('Listening on port %d', server.address().port);
 });

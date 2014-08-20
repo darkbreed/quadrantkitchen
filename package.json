@@ -19,5 +19,9 @@
     "node-find-files": "0.0.2",
     "findit": "^2.0.0",
     "moment": "^2.7.0"
-  }
+  },
+    "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js"
 }
