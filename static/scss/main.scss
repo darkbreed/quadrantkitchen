@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Glegoo|Condiment|Pathway+Gothic+One|Nothing+You+Could+Do);
 
-$bodyTextColour: #fff;
+$bodyTextColour: #999999;
 $tint: rgba(0,0,0,0.6);
-$grey: #4d4d4d;
+$grey: #999999;
+$white: #FFF;
 
 @mixin center {
     display: block;
@@ -160,6 +161,9 @@ img.circular {
 
     h3 {
         margin-bottom: 0px;
+        a{
+            color: $white;
+        }
     }
 
     p {
@@ -172,6 +176,7 @@ img.circular {
 
     .tags {
         padding: 10px 0 10px 0;
+        color: $white;
     }
 
     hr {
@@ -210,14 +215,18 @@ h1,h2,h3,h4,h5,h6 {
 
 footer {
     a {
-        color: #404040;
+        color: $grey;
     }
-    color: #404040;
-    border-top: 1px solid #404040;
+    color: $grey;
+    border-top: 1px solid $grey;
 	background-color: #000;
     margin: 0;
     padding: 0;
     height: 500px;
+
+    h3 {
+        color: $white;
+    }
 
     #social-footer ul{
         list-style: none;

@@ -12,14 +12,20 @@
           <div class="large-6 columns">
             
             <h2>{{ post.meta.title }}</h2>
+            
             <h5>Written by <a href="#">{{post.meta.author}}</a> on {{post.meta.date}}</h5>
            
-              <p><span class="tags-label">Tags</span>:
+            <p><span class="tags-label">Tags</span>:
               {% for tag in post.meta.tags %}
               <a href="/tags/{{tag}}">{{tag}}</a>,
               {% endfor %}
-              </p>
+            </p>
 
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=benreed"></script>
+            
+            <div class="addthis_sharing_toolbox"></div>
+              
           </div>
           <div class="large-6 columns">
             <img class="article-feature" src="{{post.meta.featureImage}}"/>
