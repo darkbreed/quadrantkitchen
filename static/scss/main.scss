@@ -43,28 +43,6 @@ body {
     }
 }
 
-img.desaturate { 
-    -webkit-filter: brightness(60%);
-    -moz-filter: brightness(60%);
-    filter: brightness(60%);
-}
-
-img:hover { 
-    -webkit-filter: brightness(100%);
-    -moz-filter: brightness(100%);
-    filter: brightness(100%);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-}
-
-img.circular {
-    height: 75px;
-    width: 75px;
-    border: 2px solid #fff;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-}
-
 #main-menu {
     a.item label {
         color: #fff;

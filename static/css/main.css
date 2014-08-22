@@ -29,39 +29,14 @@ body a {
   color: #999999;
 }
 
-/* line 46, ../scss/main.scss */
-img.desaturate {
-  -webkit-filter: brightness(60%);
-  -moz-filter: brightness(60%);
-  filter: brightness(60%);
-}
-
-/* line 52, ../scss/main.scss */
-img:hover {
-  -webkit-filter: brightness(100%);
-  -moz-filter: brightness(100%);
-  filter: brightness(100%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-}
-
-/* line 60, ../scss/main.scss */
-img.circular {
-  height: 75px;
-  width: 75px;
-  border: 2px solid #fff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-}
-
-/* line 69, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 #main-menu a.item label {
   color: #fff;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 20px;
 }
 
-/* line 77, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .sidebar.columns,
 #content #grid .columns {
   padding-left: 0;
@@ -69,42 +44,42 @@ img.circular {
   height: 100%;
 }
 
-/* line 91, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 #content {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 95, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
 #sidebar {
   padding-top: 10px;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 99, ../scss/main.scss */
+/* line 77, ../scss/main.scss */
 #sidebar .columns {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 104, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 #sidebar hr {
   border-color: #999999;
 }
-/* line 108, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 #sidebar #main-menu {
   margin-bottom: 10px;
 }
-/* line 110, ../scss/main.scss */
+/* line 88, ../scss/main.scss */
 #sidebar #main-menu .item {
   text-align: center;
 }
-/* line 114, ../scss/main.scss */
+/* line 92, ../scss/main.scss */
 #sidebar #main-menu i {
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: 28px;
 }
-/* line 122, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 #sidebar #social a {
   font-size: 40px;
   display: block;
@@ -113,14 +88,14 @@ img.circular {
   text-align: center;
 }
 
-/* line 133, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 #hero {
   min-height: 100%;
   background: url("../img/bw_background.jpg") no-repeat center center fixed;
   background-color: #000;
   background-size: cover;
 }
-/* line 138, ../scss/main.scss */
+/* line 116, ../scss/main.scss */
 #hero img#logo {
   margin-bottom: 20px;
   display: block;
@@ -128,81 +103,81 @@ img.circular {
   margin-right: auto;
 }
 
-/* line 144, ../scss/main.scss */
+/* line 122, ../scss/main.scss */
 #grid {
   margin-top: 50px;
 }
 
-/* line 148, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 .grid-item {
   min-height: 300px;
   margin-bottom: 10px;
   min-width: 100%;
 }
-/* line 156, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .grid-item img {
   min-width: 100%;
   min-height: 250px;
   margin-top: 10px;
 }
-/* line 162, ../scss/main.scss */
+/* line 140, ../scss/main.scss */
 .grid-item h3 {
   margin-bottom: 0px;
 }
-/* line 164, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 .grid-item h3 a {
   color: white;
 }
-/* line 169, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .grid-item p {
   padding: 0 0 20px;
 }
-/* line 173, ../scss/main.scss */
+/* line 151, ../scss/main.scss */
 .grid-item .date {
   padding: 10px 0 0 0px;
 }
-/* line 177, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 .grid-item .tags {
   padding: 10px 0 10px 0;
   color: white;
 }
-/* line 182, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 .grid-item hr {
   margin: 0;
   padding: 0;
   border-color: #3d3d3d;
 }
 
-/* line 189, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 article {
   margin-top: 20px;
 }
-/* line 193, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 article h3 {
   font-family: 'Nothing You Could Do', cursive;
 }
-/* line 197, ../scss/main.scss */
+/* line 175, ../scss/main.scss */
 article span.tags-label {
   font-family: 'Nothing You Could Do', cursive;
 }
-/* line 201, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 article .article-feature {
   width: 100%;
 }
 
-/* line 206, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 h3.article-body {
   font-family: 'Nothing You Could Do', cursive;
   color: #999999;
 }
 
-/* line 211, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pathway Gothic One', sans-serif;
   color: #999999;
 }
 
-/* line 216, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 footer {
   color: #999999;
   border-top: 1px solid #999999;
@@ -211,15 +186,15 @@ footer {
   padding: 0;
   height: 500px;
 }
-/* line 217, ../scss/main.scss */
+/* line 195, ../scss/main.scss */
 footer a {
   color: #999999;
 }
-/* line 227, ../scss/main.scss */
+/* line 205, ../scss/main.scss */
 footer h3 {
   color: white;
 }
-/* line 231, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 footer #social-footer ul {
   list-style: none;
   margin: 0;
