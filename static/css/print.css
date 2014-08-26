@@ -1,0 +1,7 @@
+@media print {
+  /* line 3, ../scss/print.scss */
+  .no-print {
+    visibility: hidden;
+    display: none;
+  }
+}

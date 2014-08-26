@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Glegoo|Condiment|Pathway+Gothic+One|Nothing+You+Could+Do);
 
-$bodyTextColour: #999999;
+$bodyTextColour: #d6d6d6;
 $tint: rgba(0,0,0,0.6);
 $grey: #999999;
 $white: #FFF;
@@ -34,7 +34,7 @@ body {
     color: $bodyTextColour;
     height: 100%;
     
-    p {
+    p,li {
         font-size: 14px;
     }
 
@@ -198,9 +198,9 @@ h1,h2,h3,h4,h5,h6 {
 
 footer {
     a {
-        color: $grey;
+        color: $bodyTextColour;
     }
-    color: $grey;
+    color: $bodyTextColour;
     border-top: 1px solid $grey;
 	background-color: #000;
     margin: 0;

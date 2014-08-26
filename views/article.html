@@ -14,17 +14,19 @@
             <h2>{{ post.meta.title }}</h2>
             
             <h5>Written by <a href="#">{{post.meta.author}}</a> on {{post.meta.date}}</h5>
-           
-            <p><span class="tags-label">Tags</span>:
-              {% for tag in post.meta.tags %}
-              <a href="/tags/{{tag}}">{{tag}}</a>,
-              {% endfor %}
-            </p>
+            
+            <div class="tags no-print">
+              <p><span class="tags-label">Tags</span>:
+                {% for tag in post.meta.tags %}
+                <a href="/tags/{{tag}}">{{tag}}</a>,
+                {% endfor %}
+              </p>
+            </div>
 
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
             <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=benreed"></script>
-            
-            <div class="addthis_sharing_toolbox"></div>
+            <h3 class="hide-for-small-only no-print">Share this...</h3>
+            <div class="addthis_sharing_toolbox hide-for-small-only no-print"></div>
               
           </div>
           <div class="large-6 columns">
@@ -37,8 +39,12 @@
             <hr />
             {{ post.html|safe }}
           </div>
+          <div class="small-12 columns">
+            <h3 class="hide-for-medium-up no-print">Share this...</h3>
+            <div class="addthis_sharing_toolbox hide-for-medium-up no-print"></div>
+          </div>
         </div>
- 
+        
       </article>
     
     <div class="row">

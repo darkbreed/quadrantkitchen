@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="/static/css/foundation.css"/>
 	<link rel="stylesheet" href="/static/css/foundation-icons.css" />
   	<link rel="stylesheet" href="/static/css/app.css"/>
+  	<link rel="stylesheet" href="/static/css/print.css"/>
 
 	<script src="/static/js/vendor/modernizr.js"></script>
 	<script src="/static/js/vendor/jquery.js"></script>
@@ -25,8 +26,8 @@
 	<div id="hero">
 		<div class="row">
 			<div class="large-3 columns sidebar">
-				<div id="sidebar">
-					<div id="social">
+				<div id="sidebar" class="no-print">
+					<div id="social" class="hide-for-small-only">
 						<div class="small-3 columns">
 							<a href="http://www.facebook.com/quadrantkitchen"><i class="fi-social-facebook"></i></a>
 						</div>
@@ -40,30 +41,30 @@
 						<a href="http://www.pinterest.com/bjreed83/recipes"><i class="fi-social-pinterest"></i></a>
 					</div>
 					</div>
-					<hr/>
+					<hr class="hide-for-small-only"/>
 					<a href="/">
 						<img id="logo" src="/static/img/logo_w.png" width="300">
 					</a>
 					<hr/>
 					<div id="main-menu" class="clearfix"> 
-						<div class="small-4 columns">
+						<div class="small-6 columns">
 							<a class="item" href="/recipes?page=1">
 								<i class="fi-book"></i>
 								<label>Recipes</label>
 							</a>
 						</div>
-						<div class="small-4 columns">
+						<div class="small-6 columns">
 							<a class="item" href="/blog?page=1">
 								<i class="fi-bookmark"></i>
 							    <label>Blog</label>
 							</a>
 						</div>
-						<div class="small-4 columns">
+						<!-- <div class="small-4 columns">
 							<a class="item" href="/directory?page=1">
 							    <i class="fi-map"></i>
 							    <label>Directory</label>
 							</a>
-						</div>
+						</div> -->
 					</div>
 		      	</div>
 			</div>
@@ -74,7 +75,7 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer class="no-print">
 		<div class="row">
 			<div class="large-3 columns">
 				<h3>Get in touch</h3>

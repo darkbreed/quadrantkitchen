@@ -238,16 +238,16 @@ span.tags-label {
 /* line 32, ../scss/main.scss */
 body {
   font-family: 'Glegoo', serif;
-  color: #999999;
+  color: #d6d6d6;
   height: 100%;
 }
 /* line 37, ../scss/main.scss */
-body p {
+body p, body li {
   font-size: 14px;
 }
 /* line 41, ../scss/main.scss */
 body a {
-  color: #999999;
+  color: #d6d6d6;
 }
 
 /* line 47, ../scss/main.scss */
@@ -400,12 +400,12 @@ h3.article-body {
 /* line 194, ../scss/main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pathway Gothic One', sans-serif;
-  color: #999999;
+  color: #d6d6d6;
 }
 
 /* line 199, ../scss/main.scss */
 footer {
-  color: #999999;
+  color: #d6d6d6;
   border-top: 1px solid #999999;
   background-color: #000;
   margin: 0;
@@ -414,7 +414,7 @@ footer {
 }
 /* line 200, ../scss/main.scss */
 footer a {
-  color: #999999;
+  color: #d6d6d6;
 }
 /* line 210, ../scss/main.scss */
 footer h3 {
@@ -424,4 +424,12 @@ footer h3 {
 footer #social-footer ul {
   list-style: none;
   margin: 0;
+}
+
+@media print {
+  /* line 3, ../scss/print.scss */
+  .no-print {
+    visibility: hidden;
+    display: none;
+  }
 }
