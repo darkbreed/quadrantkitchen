@@ -3,7 +3,7 @@ title: BBQ Ribs
 author: ben-reed
 date: Tue, 21 Jan 2014 08:21:01 GMT
 template: article.html
-featureImage: bbq-ribs.jpeg
+featureImage: bbq-ribs.jpg
 tags: ["recipes", "pork", "bbq", "american"]
 intro: I love ribs and I have recently gotten in to BBQ food in a big way (probably through my obsession with Man vs Food). American style BBQ food goes beyond the sausages and burgers that seem to be the mainstay of British BBQ cooking, its a very traditional cooking style and is more about the flavour than just cooking outside on a sunny day.
 ...

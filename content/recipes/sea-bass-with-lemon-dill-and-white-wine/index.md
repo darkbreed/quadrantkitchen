@@ -3,7 +3,7 @@ title: Sea Bass with Lemon, Dill and white wine
 author: ben-reed
 date: Tue, 29 May 2012 12:34:29 GMT
 template: article.html
-featureImage: sea-bass.jpeg
+featureImage: sea-bass.jpg
 tags: ["recipes", "seafood", "bbq"] 
 intro: Really simple one this, very quick on the BBQ and in the oven. My philosphy with fish is just to keep it simple especially with white fish. You do not need a lot of strong flavors, just a couple to bring out the flavor of the fish.
 ...

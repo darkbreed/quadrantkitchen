@@ -3,7 +3,7 @@ title: Spatchcock BBQ chicken
 author: ben-reed
 date: Wed, 19 Sep 2012 07:19:59 GMT
 template: article.html
-featureImage: chicken.png
+featureImage: chicken.jpg
 tags: ["recipes", "bbq", "chicken"]
 intro: This recipe uses my [BBQ Dry rub mix that can be found here](&#x2F;recipes&#x2F;bbq-dry-rub). Now I am by no means a butcher, but I did this at my first attempt so anyone reading this who can wield a knife and a pair of kitchen scissors should be able to do this as well.
 ...

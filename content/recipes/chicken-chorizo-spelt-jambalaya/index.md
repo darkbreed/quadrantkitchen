@@ -3,7 +3,7 @@ title: Chicken & chorizo Spelt Jambalaya
 author: ben-reed
 date: Tue, 18 Sep 2012 20:35:53 GMT
 template: article.html
-featureImage: jambalaya.jpeg
+featureImage: jambalaya.jpg
 tags: ["recipes", "chicken", "spelt", "seafood"]
 intro: Jambalaya is an awesome one pot dish that originated in the Caribbean, it’s similar to paella and is usually made with rice. This recipe came from a meeting with a lovely lady from Sharpham Park Spelt farm in Harvey Nichols a few weeks back.
 ...

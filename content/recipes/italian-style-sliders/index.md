@@ -3,7 +3,7 @@ title: Italian style sliders
 author: ben-reed
 date: Tue, 25 Sep 2012 07:08:30 GMT
 template: article.html
-featureImage: italian-sliders.jpeg
+featureImage: italian-sliders.jpg
 tags: ["recipes", "italian", "bbq", "sliders"]
 intro: Sliders are essentially small burgers, the term can refer to any small sandwich served in a bun from what I can gather, but burgers seem to be the most common.
 ...

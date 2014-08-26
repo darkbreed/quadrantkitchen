@@ -3,7 +3,7 @@ title: Bread maker pizza dough
 author: ben-reed
 date: Wed, 19 Sep 2012 07:23:29 GMT
 template: article.html
-featureImage: pizza.png
+featureImage: pizza.jpg
 tags: ["recipes", "italian", "pizza", "bread"]
 ...
 
