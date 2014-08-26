@@ -168,8 +168,13 @@ article {
 
     margin-top: 20px;
 
+    h2 {
+        color: $white;
+    }
+
     h3 {
         font-family: 'Nothing You Could Do', cursive;
+        color: $white;
     }
 
     span.tags-label {
@@ -183,7 +188,7 @@ article {
 
 h3.article-body {
     font-family: 'Nothing You Could Do', cursive;
-    color: $bodyTextColour;
+    color: $white;
 }
 
 h1,h2,h3,h4,h5,h6 {

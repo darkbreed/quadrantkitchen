@@ -115,10 +115,12 @@ var walk = function(dir, extension, done) {
 };
 
 /**
- * Takes an options objec containing:
+ * Takes an options object containing...
  * contentType: type of posts to load
  * tag: filter results by tag
+ * order: ASC
  * pageNumber: paginates the results, supply the required page number. Leave empty for all.
+ * ... and returns a list of posts ordered by date (ASC by default)
  **/
 var loadPosts = function(options, callback){
 
@@ -152,10 +154,19 @@ var loadPosts = function(options, callback){
 
 		});
 
+		console.log(options.pageNumber);
+
+		posts.sort(function(a,b){
+			return new Date(b.meta.date) - new Date(a.meta.date);
+		});
+
 		if(options.pageNumber){
 
 			var pager = paginator.build(posts.length,options.pageNumber);
-			posts = posts.slice(pager.first_result,pager.last_result);
+
+			if(posts.length > config.settings.articlesPerPage){
+				posts = posts.slice(pager.first_result,pager.last_result);
+			}
 
 			var contentType = options.contentType ? options.contentType : null;
 
