@@ -35,9 +35,13 @@ The beef jerky has been a big success, the first batch was left to marinade for 
 <div class="row">
 	<div class="medium-6 columns">
 ![Pancetta (pre-hanging)](/images/pancetta.jpg)
+	<small>Pancetta before hanging</small>
+	<hr />
 	</div>
 	<div class="medium-6 columns">
 ![Pancetta (pre-hanging)](/images/corned-beef.jpg)
+	<small>The finished corned beef</small>
+	<hr />
 	</div>
 </div>
 
