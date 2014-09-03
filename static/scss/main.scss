@@ -41,6 +41,13 @@ body {
     a {
         color: $bodyTextColour;
     }
+
+    article, .tags {
+        a {
+            color: #008cba;
+            text-decoration: underline;
+        }
+    }
 }
 
 #main-menu {
@@ -204,7 +211,7 @@ footer {
     border-top: 1px solid $grey;
 	background-color: #000;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 0;
     height: 500px;
 
     h3 {

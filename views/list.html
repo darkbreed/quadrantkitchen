@@ -13,8 +13,14 @@
                 <h3><a href="/{{post.meta.url}}">{{post.meta.title}}</a></h3>
                 <hr/>
                 <div class="date">Published {{post.meta.date}}</div>
-                <div class="tags"><span class="tags-label">Tags: </span>{{post.meta.tags}}</div>
+                <div class="tags"><span class="tags-label">Tags: </span>
+                  {% for tag in post.meta.tags %}
+                  <a href="/tags/{{tag}}">{{tag}}</a>,
+                  {% endfor %}</div>
                 <p class="intro">{{post.meta.intro}}</p>
+
+
+
               </div>
             </div> 
           </div> 

@@ -28,15 +28,20 @@ body p, body li {
 body a {
   color: #d6d6d6;
 }
+/* line 46, ../scss/main.scss */
+body article a, body .tags a {
+  color: #008cba;
+  text-decoration: underline;
+}
 
-/* line 47, ../scss/main.scss */
+/* line 54, ../scss/main.scss */
 #main-menu a.item label {
   color: #fff;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 20px;
 }
 
-/* line 55, ../scss/main.scss */
+/* line 62, ../scss/main.scss */
 .sidebar.columns,
 #content #grid .columns {
   padding-left: 0;
@@ -44,42 +49,42 @@ body a {
   height: 100%;
 }
 
-/* line 69, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 #content {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 73, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 #sidebar {
   padding-top: 10px;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 77, ../scss/main.scss */
+/* line 84, ../scss/main.scss */
 #sidebar .columns {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 82, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 #sidebar hr {
   border-color: #999999;
 }
-/* line 86, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 #sidebar #main-menu {
   margin-bottom: 10px;
 }
-/* line 88, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 #sidebar #main-menu .item {
   text-align: center;
 }
-/* line 92, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 #sidebar #main-menu i {
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: 28px;
 }
-/* line 100, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 #sidebar #social a {
   font-size: 40px;
   display: block;
@@ -88,14 +93,14 @@ body a {
   text-align: center;
 }
 
-/* line 111, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 #hero {
   min-height: 100%;
   background: url("../img/bw_background.jpg") no-repeat center center fixed;
   background-color: #000;
   background-size: cover;
 }
-/* line 116, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 #hero img#logo {
   margin-bottom: 20px;
   display: block;
@@ -103,103 +108,103 @@ body a {
   margin-right: auto;
 }
 
-/* line 122, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 #grid {
   margin-top: 50px;
 }
 
-/* line 126, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 .grid-item {
   min-height: 300px;
   margin-bottom: 10px;
   min-width: 100%;
 }
-/* line 134, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
 .grid-item img {
   min-width: 100%;
   min-height: 250px;
   margin-top: 10px;
 }
-/* line 140, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .grid-item h3 {
   margin-bottom: 0px;
 }
-/* line 142, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 .grid-item h3 a {
   color: white;
 }
-/* line 147, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 .grid-item p {
   padding: 0 0 20px;
 }
-/* line 151, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .grid-item .date {
   padding: 10px 0 0 0px;
 }
-/* line 155, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .grid-item .tags {
   padding: 10px 0 10px 0;
   color: white;
 }
-/* line 160, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .grid-item hr {
   margin: 0;
   padding: 0;
   border-color: #3d3d3d;
 }
 
-/* line 167, ../scss/main.scss */
+/* line 174, ../scss/main.scss */
 article {
   margin-top: 20px;
 }
-/* line 171, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
 article h2 {
   color: white;
 }
-/* line 175, ../scss/main.scss */
+/* line 182, ../scss/main.scss */
 article h3 {
   font-family: 'Nothing You Could Do', cursive;
   color: white;
 }
-/* line 180, ../scss/main.scss */
+/* line 187, ../scss/main.scss */
 article span.tags-label {
   font-family: 'Nothing You Could Do', cursive;
 }
-/* line 184, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 article .article-feature {
   width: 100%;
 }
 
-/* line 189, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 h3.article-body {
   font-family: 'Nothing You Could Do', cursive;
   color: white;
 }
 
-/* line 194, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pathway Gothic One', sans-serif;
   color: #d6d6d6;
 }
 
-/* line 199, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 footer {
   color: #d6d6d6;
   border-top: 1px solid #999999;
   background-color: #000;
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
   height: 500px;
 }
-/* line 200, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 footer a {
   color: #d6d6d6;
 }
-/* line 210, ../scss/main.scss */
+/* line 217, ../scss/main.scss */
 footer h3 {
   color: white;
 }
-/* line 214, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 footer #social-footer ul {
   list-style: none;
   margin: 0;
