@@ -25,7 +25,7 @@ One of the best things about the location of our new house is that it is close t
 	</div>
 	<div class="medium-4 columns">
 ![Blackberries](/images/blackberries.jpg)
-	<small>Blackberry walk</small>
+	<small>Blackberries</small>
 	<hr />
 	</div>
 </div>
@@ -42,13 +42,12 @@ The place is perfect foraging territory, so far we have managed to find blackber
 	</div>
 </div>
 
-We headed down again on Sunday morning last weekend to clear our heads after our house warming party and picked a bagfull of Damsons (before stopping off for a quick on in Beeses again on the way home, well it would have been rude not to). These were turned into damson gin last night, which should be just about perfect for christmas. 
+We headed down again on Sunday morning last weekend to clear our heads after our house warming party and picked a bagfull of Damsons (before stopping off for a quick on in Beeses again on the way home, well it would have been rude not to). These were turned into damson gin last night, which should be just about perfect for christmas.
 
 <div class="row">
-	
 	<div class="medium-4 columns">
 ![Japanese Rose Hips](/images/japanese-hips.jpg)
-	<small>Blackberries everywhere</small>
+	<small>Rosa rugosa, aka Japanese rose</small>
 	<hr />
 	</div>
 	<div class="medium-4 columns">
@@ -64,5 +63,7 @@ We headed down again on Sunday morning last weekend to clear our heads after our
 </div>
 
 Given that all of these berries were out in July / August the foraging season is probably coming to an end pretty soon so you may be running out of time if you want to get picking, but we will definitely be down here again next year for more. 
+
+I'm hoping to get a few more trips down to Eastwood before the weather and the nights close in and I am sure there is way more there to find if you know what you are looking for, we saw a few mushrooms down there etc. but there is no way I'll be picking these without know way more about them, and even then I think I may leave them alone. I think a good foraging book is in order
 
 Recipes for the jam and damson gin will be posted soon!
