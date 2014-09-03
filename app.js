@@ -154,8 +154,6 @@ var loadPosts = function(options, callback){
 
 		});
 
-		console.log(options.pageNumber);
-
 		posts.sort(function(a,b){
 			return new Date(b.meta.date) - new Date(a.meta.date);
 		});
@@ -212,7 +210,12 @@ app.use('/images',express.static(__dirname + IMAGE_DIR));
  **/
 app.get('/', faviconFix, function(req, res){
 	
-	res.redirect('recipes?page=1');
+	loadPosts({pageNumber: 1}, function(data){
+		var page = pageObject();
+		page.posts = data.results;
+		page.pager = data.page;
+		res.render('list.html', page);
+	});
 
 });
 
